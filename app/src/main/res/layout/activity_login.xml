@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.LoginActivity">
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/icon_baadalletta" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img1"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="50dp"
+        android:text="Login"
+        android:textColor="@color/black"
+        android:textSize="26dp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_telpon"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv1"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="30dp"
+        android:textColorHint="@color/ColorPrimary"
+        app:boxStrokeColor="@color/ColorPrimary"
+        app:hintTextColor="@color/ColorPrimary"
+        app:startIconDrawable="@drawable/ic_baseline_call_24"
+        app:startIconTint="@color/ColorPrimary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_telpon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="Nomor Telpon"
+            android:inputType="text"
+            android:textColor="@color/ColorPrimary"
+            android:textColorHint="@color/ColorPrimary" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/til_password"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/til_telpon"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="15dp"
+        android:textColorHint="@color/ColorPrimary"
+        app:boxStrokeColor="@color/ColorPrimary"
+        app:endIconMode="password_toggle"
+        app:endIconTint="@color/ColorPrimary"
+        app:hintTextColor="@color/ColorPrimary"
+        app:startIconDrawable="@drawable/ic_baseline_lock_24"
+        app:startIconTint="@color/ColorPrimary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/tie_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/ColorPrimary"
+            android:textColorHint="@color/ColorPrimary" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_masuk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/til_password"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/bg_primary_radius"
+        android:paddingVertical="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Masuk"
+            android:textColor="@color/white"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/version_test"
+        android:textColor="@color/black2" />
+
+
+</RelativeLayout>

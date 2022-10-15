@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.baadalletta.helper">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_baadalletta"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_baadalletta_foreground"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.HelperBaadalletta">
+        <activity
+            android:name=".ui.TambahPembelianActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.PembelianProdukActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.DetailProdukActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.EditPasswordActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.AkunActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.EditKategoriActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.KategoriActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.EditProdukActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.PreviewImageActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.PreviewVideoActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.TambahProdukActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.ImagePickerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.LoginActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:screenOrientation="portrait" /> <!-- cache directory file provider paths -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

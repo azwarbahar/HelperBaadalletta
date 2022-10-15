@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="10dp"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="6dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="16dp">
+
+        <ImageView
+            android:id="@+id/img_produk"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="6dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/icon_baadalletta" />
+
+        <TextView
+            android:id="@+id/tv_nama_produk"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/img_produk"
+            android:text="Nama Produk"
+            android:textColor="@color/ColorPrimary"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_kategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_nama_produk"
+            android:layout_marginLeft="4dp"
+            android:layout_marginBottom="1dp"
+            android:layout_toRightOf="@id/tv_nama_produk"
+            android:text="(Ikan)" />
+
+        <TextView
+            android:id="@+id/tv_ukuran"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_kategori"
+            android:layout_alignLeft="@id/tv_nama_produk"
+            android:layout_marginTop="5dp"
+            android:text="Ukuran : 10 x 10"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_volume"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/tv_ukuran"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/tv_ukuran"
+            android:text="Volume : 5 Ekor"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_harga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_volume"
+            android:layout_alignLeft="@id/tv_nama_produk"
+            android:text="Rp.9999" />
+
+        <TextView
+            android:id="@+id/tv_stok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_harga"
+            android:layout_alignLeft="@id/tv_harga"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:text="Stok : xxx"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_baseline_more_vert_24"
+            app:tint="@color/ColorPrimary" />
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

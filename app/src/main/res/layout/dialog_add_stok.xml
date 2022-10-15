@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="16dp"
+    android:layout_marginVertical="10dp">
+
+    <EditText
+        android:id="@+id/et_stok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginBottom="6dp"
+        android:layout_toLeftOf="@+id/tv_satuan"
+        android:hint="Jumlah : xxxxx"
+        android:inputType="number"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/tv_satuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="16dp"
+        android:text="Kg"
+        android:textColor="@color/black"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_stok_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_stok"
+        android:layout_marginHorizontal="18dp"
+        android:layout_marginBottom="10dp"
+        android:text="Stok Sekarang : xxx Kg"
+        android:textColor="@color/ColorPrimary"
+        android:textSize="12sp" />
+
+</RelativeLayout>

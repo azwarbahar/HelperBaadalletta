@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="blackTrans">#94000000</color>
+    <color name="black2">#878787</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="white2">#F9F9F9</color>
+
+    <color name="ColorPrimary">#0187C6</color>
+    <color name="ColorPrimaryDark">#0A4965</color>
+
+    <color name="transparan">#00FFFFFF</color>
+
+    <color name="ColorPrimary20">#320187C6</color>
+    <color name="ColorPrimary10">#1A0187C6</color>
+    <color name="ColorPrimary102">#E5F3F9</color>
+    <color name="grey">#323C3C3C</color>
+
+    <color name="doneText">#089554</color>
+    <color name="doneBack">#C8FFE6</color>
+
+    <color name="cancelTextTrans">#6DDC0000</color>
+    <color name="cancelText">#DC0000</color>
+    <color name="cancelBack">#FACFCF</color>
+
+    <color name="proccessText">#FFFFFF</color>
+    <color name="proccessBack">#9E9E9E</color>
+
+</resources>
